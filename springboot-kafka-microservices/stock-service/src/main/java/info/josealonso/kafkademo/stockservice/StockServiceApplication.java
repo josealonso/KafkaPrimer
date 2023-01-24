@@ -1,13 +1,13 @@
-package info.josealonso.kafkademo.emailservice;
+package info.josealonso.kafkademo.stockservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class StockServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(StockServiceApplication.class, args);
 	}
 
 }
