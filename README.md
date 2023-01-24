@@ -69,7 +69,19 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 bin/kafka-server-start.sh config/server.properties
 ```
 
+### Create the microservices
 
+Producer and consumers projects:
+
+```
+curl -G https://start.spring.io/starter.zip -d dependencies=web,kafka -d type=maven-build -d groupId=info.josealonso.kafkademo -d artifactId="stock-service" -o stock-service.zip
+```
+
+Message Broker project:
+
+```
+curl -G https://start.spring.io/starter.zip -d dependencies=lombok -d type=maven-build -d groupId=info.josealonso.kafkademo -d artifactId="base-domains" -o base-domains.zip
+```
 
 
 
